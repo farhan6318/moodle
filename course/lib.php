@@ -3017,6 +3017,10 @@ class course_request {
         $data->lang               = $courseconfig->lang;
         $data->enablecompletion   = $courseconfig->enablecompletion;
         $data->numsections        = $courseconfig->numsections;
+        $data->startdate          = time();
+        if ($courseconfig->courseenddateenabled) {
+            $data->enddate = time() + $courseconfig->courseduration;
+        }
 
         $course = create_course($data);
         $context = context_course::instance($course->id, MUST_EXIST);
