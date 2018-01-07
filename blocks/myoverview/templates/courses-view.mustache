@@ -28,12 +28,15 @@
         <div class="btn-group m-y-2" role="group" data-toggle="btns">
             <a class="btn btn-default active" href="#myoverview_courses_view_in_progress" data-toggle="tab">
                 {{#str}} inprogress, block_myoverview {{/str}}
+                <div class="count-container" data-region="count-container">{{inprogresscount}}</div>
             </a>
             <a class="btn btn-default" href="#myoverview_courses_view_future" data-toggle="tab">
                 {{#str}} future, block_myoverview {{/str}}
+                <div class="count-container" data-region="count-container">{{futurecount}}</div>
             </a>
             <a class="btn btn-default" href="#myoverview_courses_view_past" data-toggle="tab">
                 {{#str}} past, block_myoverview {{/str}}
+                <div class="count-container" data-region="count-container">{{pastcount}}</div>
             </a>
         </div>
     </div>

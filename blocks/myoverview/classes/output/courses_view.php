@@ -146,6 +146,10 @@ class courses_view implements renderable, templatable {
             }
         }
 
+        $coursesview['inprogresscount'] = isset($coursesbystatus['inprogress']) ? $coursesbystatus['inprogress'] : 0;
+        $coursesview['futurecount']     = isset($coursesbystatus['futurecount']) ? $coursesbystatus['futurecount'] : 0;
+        $coursesview['pastcount']       = isset($coursesbystatus['pastcount']) ?  $coursesbystatus['pastcount'] : 0;
+
         return $coursesview;
     }
 }
