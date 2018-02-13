@@ -3700,7 +3700,7 @@ function get_role_users($roleid, context $context, $parent = false, $fields = ''
                   'u.maildisplay, u.mailformat, u.maildigest, u.email, u.emailstop, u.city, '.
                   'u.country, u.picture, u.idnumber, u.department, u.institution, '.
                   'u.lang, u.timezone, u.lastaccess, u.mnethostid, r.name AS rolename, r.sortorder, '.
-                  'r.shortname AS roleshortname, rn.name AS rolecoursealias';
+                  'r.shortname AS roleshortname, rn.name AS rolecoursealias, ra.id AS roleassignmentid';
     }
 
     // Prevent wrong function uses.
