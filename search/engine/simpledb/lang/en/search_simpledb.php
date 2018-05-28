@@ -22,6 +22,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['nosetuprequired'] = 'No setup required for simpledb search';
 $string['pluginname'] = 'Simple search';
 $string['privacy:metadata:index'] = 'Indexed contents';
 $string['privacy:metadata:index:docid'] = 'Document id (unique)';
