@@ -4531,6 +4531,12 @@ class assign {
             $o .= $this->get_renderer()->notification(get_string('blindmarkingenabledwarning', 'assign'), 'notifymessage');
         }
 
+        if ($this->is_hidden_grader()) {
+            $o .= $this->output->box_start('alert alert-warning');
+            $o .= get_string('hidegrader_warning', 'mod_assign');
+            $o .= $this->output->box_end();
+        }
+
         // Load and print the table of submissions.
         if ($showquickgrading && $quickgrading) {
             $gradingtable = new assign_grading_table($this, $perpage, $filter, 0, true);

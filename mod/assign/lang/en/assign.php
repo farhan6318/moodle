@@ -294,6 +294,7 @@ $string['hidegrader'] = 'Hide grader identity from students';
 $string['hidegrader_help'] = 'If enabled, the identity of any user who grades an assignment submission is not shown, so students can\'t see who marked their work.
 
 Note that this setting has no effect on the comments box on the grading page.';
+$string['hidegrader_warning'] = 'Note that the setting \'Hide grader identity from students\' has no effect on this comments box. Any comments entered will be displayed with the author\'s name.';
 $string['hideshow'] = 'Hide/Show';
 $string['hiddenuser'] = 'Participant ';
 $string['inactiveoverridehelp'] = '* This override is inactive because the user\'s access to the activity is restricted. This can be due to group or role assignments, other access restrictions, or the activity being hidden.';

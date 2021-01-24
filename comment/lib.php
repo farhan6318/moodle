@@ -474,6 +474,15 @@ class comment {
 
             $html .= html_writer::start_tag('div', array('id' => 'comment-ctrl-'.$this->cid, 'class' => 'comment-ctrl'));
 
+            if ($PAGE->pagetype == 'mod-assign-gradingpanel') {
+                $assign = new assign($this->get_context(), null, null);
+                if ($assign->is_hidden_grader()) {
+                    $html .= html_writer::start_div('alert alert-warning');
+                    $html .= get_string('hidegrader_warning', 'mod_assign');
+                    $html .= html_writer::end_div();
+                }
+            }
+
             if ($this->autostart) {
                 // If autostart has been enabled print the comments list immediatly
                 $html .= html_writer::start_tag('ul', array('id' => 'comment-list-'.$this->cid, 'class' => 'comment-list comments-loaded'));
