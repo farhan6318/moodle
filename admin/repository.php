@@ -56,10 +56,6 @@ $configstr  = get_string('manage', 'repository');
 
 $return = true;
 
-if (!empty($action)) {
-    require_sesskey();
-}
-
 /**
  * Helper function that generates a moodle_url object
  * relevant to the repository
